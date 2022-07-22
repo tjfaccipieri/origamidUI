@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+:root {
+  --white: #FFFFFF;
+  --off-white: #f9f8f6;
+  --stroke-gray: #d8d4cc;
+  --form-dark: #1b1a16;
+  --button-yellow: #FFBB12;
+  --text-yellow: #764601;
+  --icon: #bcb6aa;
+}
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  font-family: 'Roboto', sans-serif;
+}
+
+body {
+  background-color: #737272;
+  min-height: 100vh;
+  display: grid;
+  place-items: center;
+  padding: 1rem;
+}
+
+.page {
+  width: 400px;
+  max-height: 800px;
+  background-color: var(--off-white);
+}
+
+header {
+  display: flex;
+  justify-content: space-between;
+  padding: 30px 15px 0;
+  border-top: 4px solid var(--button-yellow);
+}
+
+.form {
+  background-color: var(--white);
+  border-radius: 4px;
+  margin: 24px 20px;
+  padding: 20px;
+  box-shadow: 0 1px 2px 0 #46423799 ;
+}
+
+div + div {
+  margin-top: 20px
+}
+
+label {
+  font-weight: 500;
+  padding-left: .5rem;
+}
+
+input, select {
+  width: 100%;
+  border-radius: 4px;
+  height: 40px;
+  margin-top: 5px;
+  border: 1px solid var(--stroke-gray);
+  padding: 0 .5rem;
+  font-size: 1rem;
+}
+
+input:focus, select:focus {
+  outline: none;
+  border: 1px solid var(--button-yellow);
+  box-shadow: 0 0 0 2px #FFBB1280
+}
+
+.senha {
+  position: relative;
+}
+
+.eye {
+  position: absolute;
+  right: 15px;
+  top: 35px;
+}
+
+.double {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  padding: 0;
+  margin-top: 20px;
+}
+
+.double > div {
+  margin-top: 0;
+}
+
+.double > label {
+  margin-top: 5px;
+}
+
+#concordo {
+  height: 20px;
+  width: 20px;
+}
+
+button {
+  margin-top: 25px;
+  background-color: var(--button-yellow);
+  color: var(--text-yellow);
+  border: 0;
+  border-radius: 4px;
+  padding: 16px 30px;
+  font-weight: 500
+}
+
