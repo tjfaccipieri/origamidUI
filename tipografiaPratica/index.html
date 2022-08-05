@@ -1,38 +1,87 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
-  <link rel="stylesheet" href="style.css">
-</head>
-<body>
-  <header>
-    <div class="container">
-      <span>Respostas em até 24h</span>
-      <h3>nosso contato<span class="amarelo">.</span></h3>
-    </div>
-  </header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <span>Respostas em até 24h</span>
+        <h3>nosso contato<span class="amarelo">.</span></h3>
+      </div>
+    </header>
 
-  <div class="container">
-    <div class="contato">
-      <div class="esquerda"></div>
-      <div class="direita">
-        <form>
-          <div class="double">
-            <div>
-              <label for="nome">Nome</label>
-              <input type="text" placeholder="Seu nome">
-            </div>
-            <div>
-              <label for="telefone">Telefone</label>
-              <input type="text" placeholder="(13) 99999-9999">
-            </div>
+    <div class="container">
+      <div class="contato">
+        <div class="esquerda">
+          <div><span class="title">Loja Online</span></div>
+          <div>
+            <span><img src="./assets/images/endereco.png" alt=""> Rua Ali Perto, 35</span>
+            <span>Rio de Janeiro - RJ</span>
+            <span>Brasil - Terra - Via Láctea</span>
           </div>
-        </form>
+          <div>
+            <span><img src="./assets/images/email.png" alt="">vendas@bikcraft.com</span>
+            <span>assistencia@bikcraft.com</span>
+          </div>
+          <div><span><img src="./assets/images/phone.png" alt="">21 99999-9999</span></div>
+          <div class="logos">
+            <img src="./assets/images/insta.png" alt="" />
+            <img src="./assets/images/face.png" alt="" />
+            <img src="./assets/images/youtube.png" alt="" />
+          </div>
+          <img src="./assets/images/sep.png" alt="" width="52" />
+        </div>
+        <div class="direita">
+          <form>
+            <div class="double">
+              <div>
+                <label for="nome">Nome</label>
+                <input
+                  type="text"
+                  placeholder="Seu nome"
+                  name="nome"
+                  id="nome"
+                  required
+                />
+              </div>
+              <div>
+                <label for="telefone">Telefone</label>
+                <input
+                  type="text"
+                  placeholder="(13) 99999-9999"
+                  name="telefone"
+                  id="telefone"
+                />
+              </div>
+            </div>
+            <div>
+              <label for="telefone">Email</label>
+              <input
+                type="text"
+                placeholder="contato@email.com"
+                name="email"
+                id="email"
+              />
+            </div>
+            <div>
+              <label for="telefone">Mensagem</label>
+              <textarea
+                rows="6"
+                placeholder="O que você precisa?"
+                name="mensagem"
+                id="mensagem"
+              ></textarea>
+            </div>
+
+            <button class="enviar">Enviar mensagem</button>
+          </form>
+        </div>
       </div>
     </div>
-  </div>
-</body>
+  </body>
 </html>
